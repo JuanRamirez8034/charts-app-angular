@@ -1,1 +1,13 @@
-<p>doughnut-http works!</p>
+<div class="d-block p-4">
+    <h1 class="d-flex justify-content-center my-3">Doughnut Http</h1>
+    <div *ngIf="!data" class="alert alert-info d-flex align-items-center p-2">
+        <div class="spinner-border"></div>
+        <span class="fs-4"> Loanding...</span>
+    </div>
+    <canvas baseChart class="chart"
+        [data]="doughnutChartData"
+        [type]="doughnutChartType"
+        [options]="chartOptions"
+    >
+    </canvas>
+</div>
