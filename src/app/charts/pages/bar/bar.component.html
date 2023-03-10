@@ -1,1 +1,17 @@
-<p>bar works!</p>
+<div class="d-block p-4">
+  <h1 class="d-flex w-100 justify-content-center my-3">
+    <span>Bar chart </span>
+    <a class="text-decoration-none" href="https://valor-software.com/ng2-charts/">(NgCharts)</a>
+  </h1>
+  
+  <canvas baseChart class="chart"
+    [data]="barChartData"
+    [options]="barChartOptions"
+    [type]="barChartType"
+  ></canvas>
+
+  <button 
+    class="btn btn-primary btn-sm"
+    (click)="randomize()"
+  >Update</button>
+</div>

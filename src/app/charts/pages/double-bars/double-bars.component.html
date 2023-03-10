@@ -1,1 +1,21 @@
-<p>double-bars works!</p>
+<div class="d-block w-100 min-vh-100">
+    <h1 class="my-3 d-flex justify-content-center">Double charts</h1>
+
+    <div class="row p-0 w-100">
+        <div class="col-md-6">
+            <app-bar-chart
+                [dataSets]="data1"
+                [chartLabels]="chartLabels"
+                [horizontalBar]="true"
+                charTitle="Chart 1 (lineal)"
+            ></app-bar-chart>
+        </div>
+        <div class="col-md-6">
+            <app-bar-chart
+                [dataSets]="data1"
+                [chartLabels]="chartLabels"
+                charTitle="Chart 2 (bar)"
+            ></app-bar-chart>
+        </div>
+    </div>
+</div>

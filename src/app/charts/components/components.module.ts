@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { NgChartsModule } from 'ng2-charts';
 
 
 
@@ -8,8 +9,12 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
   declarations: [
     BarChartComponent
   ],
+  exports:[
+    BarChartComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgChartsModule
   ]
 })
 export class ComponentsModule { }
